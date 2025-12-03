@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Checker - Text Analysis Tool</title>
+    <link rel="stylesheet" href="../../assets/main css,scss/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --first-color: #2C3E50;
+            --second-color: #3498DB;
+            --background-color: #ECF0F1;
+            --text-color: #2C3E50;
+            --button-color: #2980B9;
+            --accent-color: #E74C3C;
+        }
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        .section-title, .about__subtitle, .skills__subtitle {
+            color: var(--first-color);
+        }
+        .skills__icon {
+            color: var(--second-color);
+        }
+        .skills__name, .about__text {
+            color: var(--text-color);
+        }
+        .skills__bar {
+            background-color: var(--second-color);
+        }
+        .skills__text i {
+            color: var(--accent-color) !important;
+        }
+        .footer__icon {
+            color: var(--button-color) !important;
+            transition: color 0.3s ease;
+        }
+        .footer__icon:hover {
+            color: var(--accent-color) !important;
+        }
+        .nav__logo {
+            color: var(--first-color);
+            transition: color 0.3s ease;
+        }
+        .nav__logo:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="../../index.html" class="nav__logo">Ashwani</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <section class="about section">
+            <h2 class="section-title">Spelling Checker Project</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="../../assets/img/SP2.jpg" alt="Spelling Checker">
+                </div>
+                
+                <div>
+                    <h2 class="about__subtitle">Text Analysis Tool</h2>
+                    <p class="about__text">A comprehensive spelling checker application that helps users identify and correct spelling errors in their text. The tool provides suggestions for misspelled words and helps improve writing accuracy through real-time analysis and correction.</p>
+                </div>                                   
+            </div>
+
+            <div class="skills__container bd-grid" style="margin-top: 2rem;">          
+                <div>
+                    <h2 class="skills__subtitle">Tech Stack</h2>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='fab fa-python skills__icon'></i>
+                            <span class="skills__name">Python</span>
+                        </div>
+                        <div class="skills__bar skills__python"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='fas fa-book skills__icon'></i>
+                            <span class="skills__name">NLTK</span>
+                        </div>
+                        <div class="skills__bar skills__js"></div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='fas fa-window-maximize skills__icon'></i>
+                            <span class="skills__name">Tkinter GUI</span>
+                        </div>
+                        <div class="skills__bar skills__ux"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__container bd-grid" style="margin-top: 2rem;">          
+                <div>
+                    <h2 class="skills__subtitle">Features</h2>
+                    <ul class="skills__text" style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 1rem;"><i class='bx bx-check-circle' style="color: #4a6cf7;"></i> Real-time Spell Checking</li>
+                        <li style="margin-bottom: 1rem;"><i class='bx bx-check-circle' style="color: #4a6cf7;"></i> Word Suggestions</li>
+                        <li style="margin-bottom: 1rem;"><i class='bx bx-check-circle' style="color: #4a6cf7;"></i> Grammar Analysis</li>
+                        <li style="margin-bottom: 1rem;"><i class='bx bx-check-circle' style="color: #4a6cf7;"></i> User-friendly Interface</li>
+                        <li style="margin-bottom: 1rem;"><i class='bx bx-check-circle' style="color: #4a6cf7;"></i> Custom Dictionary Support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skills__container bd-grid" style="margin-top: 2rem;">          
+                <div>
+                    <h2 class="skills__subtitle">Future Improvements</h2>
+                    <ul class="skills__text" style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 1rem;"><i class='bx bx-right-arrow-alt' style="color: #4a6cf7;"></i> Context-aware Suggestions</li>
+                        <li style="margin-bottom: 1rem;"><i class='bx bx-right-arrow-alt' style="color: #4a6cf7;"></i> Multiple Language Support</li>
+                        <li style="margin-bottom: 1rem;"><i class='bx bx-right-arrow-alt' style="color: #4a6cf7;"></i> Advanced Grammar Rules</li>
+                        <li style="margin-bottom: 1rem;"><i class='bx bx-right-arrow-alt' style="color: #4a6cf7;"></i> Cloud Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Back to 
+            <a href="../../index.html" class="footer__icon" style="text-decoration: none; color: #4a6cf7;">
+                <i class='bx bx-home'></i> Home
+            </a>
+        </p>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>
